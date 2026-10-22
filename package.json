@@ -1,0 +1,16 @@
+{
+  "name": "siyuan-translation",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "build": "python3 scripts/package.py",
+    "check": "npm test && npm run build && node --check index.js && python3 scripts/check_package.py"
+  },
+  "author": "wave789",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wave789/siyuan-translation.git"
+  },
+  "license": "MIT"
+}

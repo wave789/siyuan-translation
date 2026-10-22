@@ -1,0 +1,4 @@
+.selection-translator { padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+.selection-translator textarea { width: 100%; box-sizing: border-box; min-height: 100px; resize: vertical; }
+.selection-translator__actions { display: flex; gap: 12px; }
+.selection-translator__status { white-space: pre-wrap; overflow-wrap: anywhere; }

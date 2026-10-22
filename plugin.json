@@ -1,0 +1,37 @@
+{
+  "name": "siyuan-translation",
+  "author": "wave789",
+  "url": "https://github.com/wave789/siyuan-translation",
+  "version": "0.2.0",
+  "minAppVersion": "3.8.5",
+  "backends": [
+    "all"
+  ],
+  "frontends": [
+    "desktop",
+    "desktop-window",
+    "browser-desktop"
+  ],
+  "disabledInPublish": true,
+  "displayName": {
+    "default": "Selection Translator",
+    "zh-CN": "选中翻译"
+  },
+  "description": {
+    "default": "Translate selected English into Chinese using a local LLM or Baidu.",
+    "zh-CN": "通过本地 LLM 或百度翻译，将选中的英文翻译为中文。"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh-CN": "README.md"
+  },
+  "icon": "icon.png",
+  "keywords": [
+    "翻译",
+    "英文",
+    "中文",
+    "Ollama",
+    "百度",
+    "translation"
+  ]
+}
