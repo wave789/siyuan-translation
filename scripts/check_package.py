@@ -16,7 +16,7 @@ icon = (root / manifest["icon"]).read_bytes()
 assert icon[:8] == b"\x89PNG\r\n\x1a\n"
 assert struct.unpack(">II", icon[16:24]) == (160, 160)
 assert len(icon) <= 64 * 1024
-expected = {"index.js", "index.css", "plugin.json", "README.md", "PUBLISHING.md", "LICENSE", "icon.png", "i18n/en.json", "i18n/zh-CN.json"}
+expected = {"index.js", "index.css", "plugin.json", "README.md", "LICENSE", "icon.png", "img.png", "i18n/en.json", "i18n/zh-CN.json"}
 with zipfile.ZipFile(root / "dist/package.zip") as archive:
     assert archive.testzip() is None
     assert set(archive.namelist()) == expected
